@@ -1,0 +1,407 @@
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in element's total width and height */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgba(122, 28, 125, 255);
+}
+
+/* Banner Styling */
+.banner {
+    padding: 5px;
+    width: 96.75%;
+    height: 10vh;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+/* Banner Title Styling */
+.banner-title {
+    color: white;
+    font-size: 50px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Registration Banner Styling */
+.registration-banner {
+    padding: 50px;
+    width: 96.75%;
+    height: 10vh;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+/* Registration Banner Title Styling */
+.registration-banner-title {
+    color: white;
+    font-size: 50px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(174, 1, 174);
+    border-radius: 15px;
+    border: solid white;
+}
+
+.navbar .logo {
+    height: 50px;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Navigation Links Styling */
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+/* Navigation Link Hover Effect */
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Content Styling */
+.content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: rgb(174, 1, 174);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    /* Increased margin to push content further down */
+    border: solid white;
+}
+
+/* Registration Content Styling */
+.registration-content {
+    width: 100%;
+    padding: 80px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: rgb(174, 1, 174);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    /* Increased margin-top to push content further down */
+    border: solid white;
+}
+
+/* Social Media Content Styling */
+.social-media-content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: rgb(174, 1, 174);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    /* Increased margin-top to push content further down */
+    border: solid white;
+}
+
+/* Social Media List Styling */
+.social-media-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.social-media-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* TikTok Embed Styling */
+.tiktok-embed {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* Featured Products Section Styling */
+.featured-products {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Ensure items wrap to the next line if necessary */
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.product {
+    background-color: white;
+    color: rgba(122, 28, 125, 255);
+    border-radius: 15px;
+    flex: 1 1 calc(15% - 20px);
+    /* Adjust width and ensure flexible layout */
+    padding: 10px;
+    margin: 10px;
+    /* Adding margin to create space around each product */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: solid rgba(122, 28, 125, 255);
+}
+
+.product img {
+    max-width: 30%;
+    /* Adjust the percentage to make images smaller or larger */
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product h3 {
+    font-size: 24px;
+}
+
+.product p {
+    font-size: 16px;
+}
+
+/* Product Gallery Styling */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.product-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.product-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Styling */
+.schedule-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.schedule-table thead {
+    background-color: rgba(122, 28, 125, 255);
+    color: rgb(255, 255, 255);
+}
+
+.schedule-table tbody {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgba(122, 28, 125, 255);
+}
+
+.schedule-table th {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.schedule-table td {
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    height: 320px;
+    width: 40%;
+    margin: 40px auto;
+}
+
+.carousel__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__track-container {
+    background: white;
+    height: 98.4%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+.carousel__button--left {
+    left: -40px;
+}
+
+.carousel__button--right {
+    right: -40px;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: white;
+    margin: 0 12px;
+}
+
+.carousel__indicator.current-slide {
+    background: grey;
+}
+
+/* Introduction Section Styling */
+.introduction {
+    margin: 20px auto;
+}
+
+.introduction h2 {
+    font-size: 32px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: rgb(174, 1, 174);
+    /* Same background color as the rest of the site for consistency */
+    color: white;
+    padding: 20px;
+    /* Top and bottom padding for spacing */
+    text-align: center;
+    border-top: 1px solid #ddd;
+    /* Light border for separation */
+    position: relative;
+    /* Positioned relative to allow for absolute positioning of the button */
+    bottom: 0;
+    width: 90%;
+}
+
+.footer .container {
+    max-width: 1000px;
+    /* Max width to align content */
+    margin: 0 auto;
+    /* Center align container */
+    padding: 0 20px;
+    /* Padding for inner spacing */
+}
+
+.footer p {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 16px;
+    /* Font size for readability */
+}

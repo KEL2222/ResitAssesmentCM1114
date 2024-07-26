@@ -1,0 +1,134 @@
+<!--Katelyn Leggott 2208628 -->
+<!--This is the Index, it contains the universal navigation bar. A video carousel of rgu products, stock video of shopping and an RGU tour video-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>RGU R US</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Banner section containing navigation menu and main page content-->
+    <div class="banner">
+
+        <!--Navigation menu-->
+        <div class="navbar">
+
+            <!--Logo-->
+            <a href="index.html">
+                <img src="Images/RGU LOGO.jpeg">
+            </a>
+
+
+            <!--banner title-->
+            <h1 class="banner-title">RGU R US</h1>
+
+            <!--Navigation links-->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="product-gallery.html">Our Products</a></li>
+                <li><a href="launch-schedule.html">Our Schedule</a></li>
+                <li><a href="social-media.html">Social Media</a></li>
+
+            </ul>
+        </div>
+
+
+        <!--Main content-->
+        <div class="content">
+
+            <section class="introduction">
+                <h2>Welcome to RGU R US</h2>
+                <p>At RGU R US, we’re dedicated to bringing you the best of Robert Gordon University’s spirit through a
+                    wide range of exclusive merchandise. Whether you’re an alum, a current student, or just a fan of
+                    RGU, our carefully curated collection has something for everyone. From stylish apparel and
+                    accessories to unique gifts and memorabilia, each item is designed to celebrate and embody the pride
+                    of our university community. Navigate our easy-to-use site to explore our product gallery, stay
+                    updated with our launch schedule, or connect with us on social media. Join us in celebrating RGU and
+                    show your support with every purchase!</p>
+            </section>
+
+            <!-- Featured Products-->
+            <section class="featured-products">
+                <h2>Featured Products</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="Images/RGUHoodie.webp" alt="Product 1">
+                        <h3>RGU Hoodie</h3>
+                        <p>The classic hoodie. Every university has one. A fantastic way to connect you to your
+                            educational enviroment!</p>
+                    </div>
+                    <div class="product">
+                        <img src="Images/Product2Mug.webp" alt="Product 2">
+                        <h3>RGU Coffee Mug</h3>
+                        <p>An everyday item or a collecters item. It's all about perspective. Perfect for that well
+                            needed cuppa.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Video Carousel-->
+            <div class="carousel">
+                <button class="carousel__button carousel__button--left">&#8249</button>
+
+                <div class="carousel__track-container">
+
+                    <ul class="carousel__track">
+
+                        <li class="carousel__slide current-slide">
+                            <iframe class=carousel__video width="560" height="315"
+                                src="https://www.youtube.com/embed/f2JU6yzsbVc?si=sV05QTmwlJXzbl78"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </li>
+                        <li class="carousel__slide">
+                            <iframe class=carousel__video width="560" height="315"
+                                src="https://www.youtube.com/embed/zI_sjJY5aro?si=QzQ9-xOFBJ3MDY03"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </li>
+                        <li class="carousel__slide">
+                            <iframe class=carousel__video width="560" height="315"
+                                src="https://www.youtube.com/embed/ocrTC7KB9eE?si=qejiPkmkS5CGs0fT"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="carousel__button carousel__button--right">&#8250</button>
+
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide">
+                    </button>
+                    <button class="carousel__indicator">
+                    </button>
+                    <button class="carousel__indicator">
+                    </button>
+                </div>
+            </div>
+
+            <p>We are a proud Community and we go above and beyond to make high quality products</p>
+            <p> so members of our community may share our pride too!</p>
+
+            <script src="scripts.js"></script>
+
+</body>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="container">
+        <p>RGU R US. All (Hypothetical) rights reserved</p>
+    </div>
+</footer>
+
+</html>

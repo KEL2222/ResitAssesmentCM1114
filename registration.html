@@ -1,0 +1,85 @@
+<!--Katelyn Leggott 2208628 -->
+<!--This is the Registrastion page. It contains the universal navigation and styling. 
+It has a link for js for validating the input of username, password, email and password verification-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <title>RGU R US - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Banner section containing navigation menu and main page content-->
+    <div class="banner">
+
+        <!--Navigation menu-->
+        <div class="navbar">
+
+            <!--Logo-->
+            <a href="index.html">
+                <img src="Images/RGU LOGO.jpeg">
+            </a>
+
+            <!--banner title-->
+            <h1 class="banner-title">RGU R US</h1>
+
+            <!--Navigation links-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="product-gallery.html">Our Products</a></li>
+                <li><a href="launch-schedule.html">Our Schedule</a></li>
+                <li><a href="social-media.html">Social Media</a></li>
+
+            </ul>
+        </div>
+
+
+        <!--Main content-->
+        <div class="content">
+
+            <section class="introduction">
+                <h2>This is our Registration Page</h2>
+
+                <p>Registering with RGU R US gives you access to exclusive offers, updates on new products, and a
+                    seamless shopping experience tailored just for you. Complete the simple registration form to start
+                    enjoying all the benefits and stay connected with our vibrant RGU community.
+                </p>
+            </section>
+
+            <form id="registrationForm">
+                <fieldset>
+                    <legend>Create an Account</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                    <button type="submit">Register</button>
+                </fieldset>
+            </form>
+
+            <script src="scripts.js"></script>
+
+</body>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="container">
+        <p>RGU R US. All (Hypothetical) rights reserved</p>
+    </div>
+</footer>
+
+</html>
